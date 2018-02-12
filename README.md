@@ -1,8 +1,8 @@
 # Writing Django
 
-Having only used the `flask` framework, I thought it might be fun to check out Python's Django framework.
+Having only used the `flask` framework, I thought it might be fun to check out Python's [Django](https://www.djangoproject.com/) framework.
 
-As far as I can tell, it is a heavy-weight framework very much like PHP's Laravel.
+As far as I can tell, it is a heavy-weight framework very much like PHP's [Laravel](https://laravel.com/).
 
 __tl;dr__ As with `npm` versus `pip` (where the similiarities seem to far outnumber any differences),
 there are naming differences between `Django` and `Laravel` but the overall workflow and structure
@@ -165,7 +165,7 @@ We _could_ open `polls/settings.py` and change the database settings but as
 I prefer to leave the time zone set to UTC this will not be needed. We will
 also stick with the default `sqlite3` database.
 
-So lets run our database migrations:
+So lets run our [database migrations](https://docs.djangoproject.com/en/1.11/topics/migrations/):
 
     $ python manage.py migrate
 

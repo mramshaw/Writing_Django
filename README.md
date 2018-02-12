@@ -323,6 +323,10 @@ And the results should look like:
      [X] 0001_initial
     $
 
+The 'X' in the square brackets indicates that the migration has been run (for unapplied migrations this field would be blank).
+
+The migrations of the most concern to us are the `polls_app` ones (only `0001_initial` for now).
+
 ## Django API
 
 Lets invoke the Django API as follows:

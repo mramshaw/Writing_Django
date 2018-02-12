@@ -296,6 +296,33 @@ And the results should look like:
       Applying polls_app.0001_initial... OK
     $
 
+Lets use `showmigrations` to see what migrations now exist:
+
+    $ python manage.py showmigrations
+
+And the results should look like:
+
+    admin
+     [X] 0001_initial
+     [X] 0002_logentry_remove_auto_add
+    auth
+     [X] 0001_initial
+     [X] 0002_alter_permission_name_max_length
+     [X] 0003_alter_user_email_max_length
+     [X] 0004_alter_user_username_opts
+     [X] 0005_alter_user_last_login_null
+     [X] 0006_require_contenttypes_0002
+     [X] 0007_alter_validators_add_error_messages
+     [X] 0008_alter_user_username_max_length
+    contenttypes
+     [X] 0001_initial
+     [X] 0002_remove_content_type_name
+    polls_app
+     [X] 0001_initial
+    sessions
+     [X] 0001_initial
+    $
+
 ## Django API
 
 Lets invoke the Django API as follows:

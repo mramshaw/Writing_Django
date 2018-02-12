@@ -91,7 +91,7 @@ This will create a `polls_app` folder, plus files.
 
 ## Create a View
 
-Open `polls_app\views.py` and change it as follows:
+Open `polls_app/views.py` and change it as follows:
 
     $ diff -uw views.py.orig views.py
     --- views.py.orig	2018-02-11 14:18:23.894106000 -0800
@@ -107,7 +107,7 @@ Open `polls_app\views.py` and change it as follows:
     +    return HttpResponse("Hello, world. You're at the polls index.")
     $
 
-Create a `polls_app\urls.py` file and change it as follows:
+Create a `polls_app/urls.py` file and change it as follows:
 
     # -*- coding: utf-8 -*-
     from __future__ import unicode_literals
@@ -120,7 +120,7 @@ Create a `polls_app\urls.py` file and change it as follows:
         url(r'^$', views.index, name='index'),
     ]
 
-Next update the `polls\urls.py` file as follows:
+Next update the `polls/urls.py` file as follows:
 
     $ diff -uw urls.py.orig urls.py
     --- urls.py.orig	2018-02-11 14:37:19.727374508 -0800
@@ -161,8 +161,8 @@ And our development server at http://127.0.0.1:8000/ should now look like:
 
 ## Database setup
 
-We _could_ open `polls\settings.py` and change the database settings but as 
-I prefer to leave the time zone set to 'UTC' this will not be needed. We will
+We _could_ open `polls/settings.py` and change the database settings but as 
+I prefer to leave the time zone set to UTC this will not be needed. We will
 also stick with the default `sqlite3` database.
 
 So lets run our database migrations:
@@ -191,7 +191,7 @@ The results should look as follows:
 
 ## Model Creation
 
-Now lets create our models - update `polls_app\models.py` as follows:
+Now lets create our models - update `polls_app/models.py` as follows:
 
     $ git diff polls_app/models.py
     diff --git a/polls/polls_app/models.py b/polls/polls_app/models.py
@@ -217,7 +217,7 @@ Now lets create our models - update `polls_app\models.py` as follows:
 
 ## Model Activation
 
-Now lets activate our models - update `polls\settings.py` as follows:
+Now lets activate our models - update `polls/settings.py` as follows:
 
     $ git diff polls/settings.py
     diff --git a/polls/polls/settings.py b/polls/polls/settings.py
@@ -251,7 +251,7 @@ Lets verify what the resulting SQL looks like:
 
     $ python manage.py sqlmigrate polls_app 0001
 
-It should look like (bear in mind this is SQL Lite):
+It should look like (bear in mind this is SQLite):
 
     BEGIN;
     --
@@ -346,7 +346,7 @@ And query for questions again:
     
     In [8]:
 
-For convenience let add string methods to our models:
+For convenience lets add string methods to our models:
 
     $ git diff polls_app/models.py
     diff --git a/polls/polls_app/models.py b/polls/polls_app/models.py

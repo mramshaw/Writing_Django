@@ -1,8 +1,15 @@
 # Writing Django
 
-Having only used the `flask` framework, I thought it might be fun to check out Python's [Django](https://www.djangoproject.com/) framework.
+Having only used the [Flask](http://flask.pocoo.org/) framework (it describes itself as a _microframework_),
+ I thought it might be fun to check out Python's [Django](https://www.djangoproject.com/) framework.
 
-As far as I can tell, it is a heavy-weight framework very much like PHP's [Laravel](https://laravel.com/).
+As far as I can tell, it is a heavy-weight MVC framework very much like PHP's [Laravel](https://laravel.com/).
+It has its own ORM (for Flask there is [SQLAlchemy](http://www.sqlalchemy.org/) but apparently does not play
+nicely with NoSQL solutions such as [DynamoDB](https://aws.amazon.com/dynamodb/) or [MongoDB](https://www.mongodb.com/).
+
+(For a more flexible option - somewhere between Flask and Django - there is [Pyramid](https://trypyramid.com/).
+ Pyramid apparently can play nicely with DynamoDB/Mongo but doesn't have the fuller set of features of Django.
+ Of course, if you are looking at NoSQL solutions you probably are not interested in an ORM anyway.)
 
 __tl;dr__ As with `npm` versus `pip` (where the similiarities seem to far outnumber any differences),
 there are naming differences between `Django` and `Laravel` but the overall workflow and structure

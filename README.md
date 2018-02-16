@@ -15,7 +15,7 @@ __tl;dr__ As with `npm` versus `pip` (where the similiarities seem to far outnum
 there are naming differences between `Django` and `Laravel` but the overall workflow and structure
 seems - perhaps not all that surprisingly - almost exactly the same.
 
-## Pre-requisites
+## Prerequisites
 
 Python is required, also a package manager (either `pip` or `pip3`) appropriate to the Python version.
 
@@ -258,7 +258,7 @@ Lets verify what the resulting SQL looks like:
 
     $ python manage.py sqlmigrate polls_app 0001
 
-It should look like (bear in mind this is SQLite):
+It should look like (bear in mind this is unformatted SQLite):
 
     BEGIN;
     --
@@ -340,7 +340,7 @@ Lets invoke the Django API as follows:
 
     $ python manage.py shell
 
-The results should look as follows:
+The results should look as follows (I have IPython installed so this will be verbose):
 
     Python 2.7.12 (default, Dec  4 2017, 14:50:18) 
     Type "copyright", "credits" or "license" for more information.
@@ -415,7 +415,7 @@ For convenience lets add string methods to our models:
     +        return self.choice_text
     $
 
-Now if we restart our API shell, we get a more useful result:
+Now if we restart our API shell, we get a more readable result:
 
     $ python manage.py shell
     Python 2.7.12 (default, Dec  4 2017, 14:50:18) 

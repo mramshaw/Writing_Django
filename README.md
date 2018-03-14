@@ -4,8 +4,9 @@ Having only used the [Flask](http://flask.pocoo.org/) framework (it describes it
  I thought it might be fun to check out Python's [Django](https://www.djangoproject.com/) framework.
 
 As far as I can tell, it is a heavy-weight MVC framework very much like PHP's [Laravel](https://laravel.com/).
-It has its own ORM (for Flask there is [SQLAlchemy](http://www.sqlalchemy.org/) but apparently does not play
-nicely with NoSQL solutions such as [DynamoDB](https://aws.amazon.com/dynamodb/) or [MongoDB](https://www.mongodb.com/).
+It has its own ORM (for Flask there is [SQLAlchemy](http://www.sqlalchemy.org/)) but Django's ORM apparently
+does not play nicely with NoSQL solutions such as [DynamoDB](https://aws.amazon.com/dynamodb/) or
+[MongoDB](https://www.mongodb.com/).
 
 (For a more flexible option - somewhere between Flask and Django - there is [Pyramid](https://trypyramid.com/).
  Pyramid apparently can play nicely with DynamoDB/Mongo but doesn't have the fuller set of features of Django.

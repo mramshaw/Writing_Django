@@ -1,9 +1,11 @@
 # Writing Django
 
+[![Known Vulnerabilities](http://snyk.io/test/github/mramshaw/Writing_Django/badge.svg?style=plastic&targetFile=requirements.txt)](http://snyk.io/test/github/mramshaw/Writing_Django?style=plastic&targetFile=requirements.txt)
+
 Having only used the [Flask](http://flask.pocoo.org/) framework (it describes itself as a _microframework_),
  I thought it might be fun to check out Python's [Django](https://www.djangoproject.com/) framework.
 
-As far as I can tell, it is a heavy-weight MVC framework very much like PHP's [Laravel](https://laravel.com/).
+As far as I can tell, it is a heavyweight MVC framework very much like PHP's [Laravel](https://laravel.com/).
 It has its own ORM (for Flask there is [SQLAlchemy](http://www.sqlalchemy.org/)) but Django's ORM apparently
 does not play nicely with NoSQL solutions such as [DynamoDB](https://aws.amazon.com/dynamodb/) or
 [MongoDB](https://www.mongodb.com/).
@@ -28,7 +30,7 @@ Verify the installed version of Python as follows:
 
 Install the latest version of Django (plus dependencies) as follows:
 
-    $ pip install --user django
+    $ pip install --user -r requirements.txt
 
 [Replace `pip` with `pip3` as appropriate.]
 
@@ -38,7 +40,7 @@ Verify the installed version of Django as follows:
 
     $ python -m django --version
 
-[Version 1.11.10 in my case.]
+[Version 1.11.18 in my case.]
 
 ## Create a Project
 
@@ -526,6 +528,8 @@ And now we can edit our Question:
 
 ## To Do
 
+- [x] Create a `requirements.txt` file for dependencies
+- [x] Add Snyk.io vulnerability scanning and badge
 - [ ] Follow parts 3 - 7 of this tutorial
 
 ## Credits

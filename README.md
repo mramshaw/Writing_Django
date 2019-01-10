@@ -58,18 +58,20 @@ Lets check the development server works:
 
 The results should be something like:
 
-    Performing system checks...
-    
-    System check identified no issues (0 silenced).
-    
-    You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
-    Run 'python manage.py migrate' to apply them.
-    
-    February 11, 2018 - 21:43:01
-    Django version 1.11.10, using settings 'polls.settings'
-    Starting development server at http://127.0.0.1:8000/
-    Quit the server with CONTROL-C.
-    ^C$
+```bash
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+
+January 10, 2019 - 20:16:30
+Django version 1.11.18, using settings 'polls.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+^C$
+```
 
 The development server at http://127.0.0.1:8000/ should look something like:
 
@@ -526,8 +528,38 @@ And now we can edit our Question:
 
 [END OF PART 2]
 
+## Notes on Updating Django
+
+As these instructions were an exhaustive list, the simplest solution was
+simply to delete the base `polls` folder and start again from scratch.
+
+The nice thing about `git` is that it can be used very effectively to
+monitor progress.
+
+In the end there were very minimal differences, with the main difference
+being the generation comments and the generated __SECRET\_KEY__.
+
+```bash
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+	modified:   polls/polls/settings.py
+	modified:   polls/polls_app/migrations/0001_initial.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+$
+```
+
+[These notes apply to upgrading from an insecure Django 1.11.10 -> 1.11.18.]
+
 ## To Do
 
+- [x] Update for latest stable Django (1.11.18 as of the time of writing)
 - [x] Create a `requirements.txt` file for dependencies
 - [x] Add Snyk.io vulnerability scanning and badge
 - [ ] Follow parts 3 - 7 of this tutorial

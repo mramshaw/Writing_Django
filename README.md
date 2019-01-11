@@ -533,6 +533,15 @@ And now we can edit our Question:
 As these instructions were an exhaustive list, the simplest solution was
 simply to delete the base `polls` folder and start again from scratch.
 
+We ___could___ have saved our database (`polls/db.sqlite3`) first, and this
+might have saved some work. But it was simple in this case to re-create it.
+Obviously, if any ___Migrations___ had been written then deleting the `polls`
+folder would not have been a viable strategy. And this was also a
+___point release___ (i.e. 1.11.__10__ -> 1.11.__18__). If it had been a
+___major release___ (say Django __1__ to Django __2__), then things would
+probably have been different too (generally, a ___point release___ means only
+bugfixes and minor changes, with any breaking changes requiring a ___major release___).
+
 The nice thing about `git` is that it can be used very effectively to
 monitor progress.
 
@@ -559,7 +568,7 @@ $
 
 ## To Do
 
-- [x] Update for latest stable Django (1.11.18 as of the time of writing)
+- [x] Update for latest LTS Django (1.11.18 as of the time of writing)
 - [x] Create a `requirements.txt` file for dependencies
 - [x] Add Snyk.io vulnerability scanning and badge
 - [ ] Follow parts 3 - 7 of this tutorial

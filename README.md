@@ -536,9 +536,9 @@ simply to delete the base `polls` folder and start again from scratch.
 We ___could___ have saved our database (`polls/db.sqlite3`) first, and this
 might have saved some work. But it was simple in this case to re-create it.
 Obviously, if any ___Migrations___ had been written then deleting the `polls`
-folder would not have been a viable strategy. And this was also a
-___point release___ (i.e. 1.11.__10__ -> 1.11.__18__). If it had been a
-___major release___ (say Django __1__ to Django __2__), then things would
+folder would not have been a viable strategy. [SemVer](http://semver.org) means
+this was a ___point release___ (i.e. 1.11.__10__ -> 1.11.__18__). If it had been
+a ___major release___ (say Django __1__ to Django __2__), then things would
 probably have been different too (generally, a ___point release___ means only
 bugfixes and minor changes, with any breaking changes requiring a ___major release___).
 

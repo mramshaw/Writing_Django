@@ -1,11 +1,11 @@
 # Writing Django
 
+PLEASE REFER TO http://github/mramshaw/Writing_Django_2 FOR A CURRENT VERSION OF DJANGO WITH PYTHON.
+
 [![Known Vulnerabilities](https://snyk.io/test/github/mramshaw/Writing_Django/badge.svg?style=plastic&targetFile=requirements.txt)](https://snyk.io/test/github/mramshaw/Writing_Django?style=plastic&targetFile=requirements.txt)
 
-PLEASE REFER TO http://github/mramshaw/Writing_Django_2 FOR A MORE RECENT VERSION OF DJANGO WITH PYTHON.
-
 Having used the [Flask](http://flask.pocoo.org/) framework (it describes itself as a _microframework_)
-with [SQLAlchemy](http://www.sqlalchemy.org/) for my [OAuth repo](http://github.com/mramshaw/OAuth2.0),
+with [SQLAlchemy](http://www.sqlalchemy.org/) for my [OAuth 2.0 repo](http://github.com/mramshaw/OAuth2.0),
 I thought it might be fun to check out Python's [Django](http://www.djangoproject.com/) framework.
 
 As far as I can tell, it is a heavyweight MVC framework very much like PHP's [Laravel](http://laravel.com/).

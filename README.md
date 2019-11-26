@@ -10,13 +10,13 @@ I thought it might be fun to check out Python's [Django](http://www.djangoprojec
 
 As far as I can tell, it is a heavyweight MVC framework very much like PHP's [Laravel](http://laravel.com/).
 It has its own ORM (for Flask there is SQLAlchemy but Django's ORM apparently does not play nicely with NoSQL
-solutions such as [DynamoDB](http://aws.amazon.com/dynamodb/) or [MongoDB](http://www.mongodb.com/).
+solutions such as [DynamoDB](http://aws.amazon.com/dynamodb/) or [MongoDB](http://www.mongodb.com/)).
 
-(For a more flexible option - somewhere between Flask and Django - there is [Pyramid](http://trypyramid.com/).
+[For a more flexible option - somewhere between Flask and Django - there is [Pyramid](http://trypyramid.com/).
  Pyramid apparently can play nicely with DynamoDB/Mongo but doesn't have the fuller set of features of Django.
- Of course, if you are looking at NoSQL solutions you probably are not interested in an ORM anyway.)
+ Of course, if you are looking at NoSQL solutions you probably are not interested in an ORM anyway.]
 
-__tl;dr__ As with `npm` versus `pip` (where the similiarities seem to far outnumber any differences),
+__tl;dr__ As with `pip` versus `npm` (where the similiarities seem to far outnumber any differences),
 there are naming differences between `Django` and `Laravel` but the overall workflow and structure
 seems - perhaps not all that surprisingly - almost exactly the same.
 

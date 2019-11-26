@@ -1,16 +1,18 @@
 # Writing Django
 
-[![Known Vulnerabilities](http://snyk.io/test/github/mramshaw/Writing_Django/badge.svg?style=plastic&targetFile=requirements.txt)](http://snyk.io/test/github/mramshaw/Writing_Django?style=plastic&targetFile=requirements.txt)
+[![Known Vulnerabilities](https://snyk.io/test/github/mramshaw/Writing_Django/badge.svg?style=plastic&targetFile=requirements.txt)](https://snyk.io/test/github/mramshaw/Writing_Django?style=plastic&targetFile=requirements.txt)
 
-Having only used the [Flask](http://flask.pocoo.org/) framework (it describes itself as a _microframework_),
- I thought it might be fun to check out Python's [Django](https://www.djangoproject.com/) framework.
+PLEASE REFER TO http://github/mramshaw/Writing_Django_2 FOR A MORE RECENT VERSION OF DJANGO WITH PYTHON.
 
-As far as I can tell, it is a heavyweight MVC framework very much like PHP's [Laravel](https://laravel.com/).
-It has its own ORM (for Flask there is [SQLAlchemy](http://www.sqlalchemy.org/)) but Django's ORM apparently
-does not play nicely with NoSQL solutions such as [DynamoDB](https://aws.amazon.com/dynamodb/) or
-[MongoDB](https://www.mongodb.com/).
+Having used the [Flask](http://flask.pocoo.org/) framework (it describes itself as a _microframework_)
+with [SQLAlchemy](http://www.sqlalchemy.org/) for my [OAuth repo](http://github.com/mramshaw/OAuth2.0),
+I thought it might be fun to check out Python's [Django](http://www.djangoproject.com/) framework.
 
-(For a more flexible option - somewhere between Flask and Django - there is [Pyramid](https://trypyramid.com/).
+As far as I can tell, it is a heavyweight MVC framework very much like PHP's [Laravel](http://laravel.com/).
+It has its own ORM (for Flask there is SQLAlchemy but Django's ORM apparently does not play nicely with NoSQL
+solutions such as [DynamoDB](http://aws.amazon.com/dynamodb/) or [MongoDB](http://www.mongodb.com/).
+
+(For a more flexible option - somewhere between Flask and Django - there is [Pyramid](http://trypyramid.com/).
  Pyramid apparently can play nicely with DynamoDB/Mongo but doesn't have the fuller set of features of Django.
  Of course, if you are looking at NoSQL solutions you probably are not interested in an ORM anyway.)
 
@@ -48,7 +50,7 @@ Use the `django-admin` command to do this:
 
     $ django-admin startproject polls
 
-Note that [django-admin](https://docs.djangoproject.com/en/1.11/ref/django-admin/)
+Note that [django-admin](http://docs.djangoproject.com/en/1.11/ref/django-admin/)
  creates a folder plus infra-structure files, much like `maven` or `sbd`.
 
 Lets check the development server works:
@@ -177,7 +179,7 @@ We _could_ open `polls/settings.py` and change the database settings but as
 I prefer to leave the time zone set to UTC this will not be needed. We will
 also stick with the default `sqlite3` database.
 
-So lets run our [database migrations](https://docs.djangoproject.com/en/1.11/topics/migrations/):
+So lets run our [database migrations](http://docs.djangoproject.com/en/1.11/topics/migrations/):
 
     $ python manage.py migrate
 
@@ -577,8 +579,8 @@ $
 
 Part 1:
 
-    https://docs.djangoproject.com/en/1.11/intro/tutorial01/
+    http://docs.djangoproject.com/en/1.11/intro/tutorial01/
 
 Part 2:
 
-    https://docs.djangoproject.com/en/1.11/intro/tutorial02/
+    http://docs.djangoproject.com/en/1.11/intro/tutorial02/
